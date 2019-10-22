@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="OpenGLPAG" targetName="IrrXML" />
       <config projectName="OpenGLPAG" targetName="glfw" />
       <config projectName="OpenGLPAG" targetName="glad" />
       <config projectName="OpenGLPAG" targetName="imgui" />
       <config projectName="OpenGLPAG" targetName="uninstall" />
       <config projectName="OpenGLPAG" targetName="OpenGLPAG" />
+      <config projectName="OpenGLPAG" targetName="IrrXML" />
       <config projectName="OpenGLPAG" targetName="stb_image" />
       <config projectName="OpenGLPAG" targetName="assimp" />
     </generated>
@@ -18,7 +18,34 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0757966f-909d-4479-b9ba-2ff57227567d" name="Default Changelist" comment="" />
+    <list default="true" id="0757966f-909d-4479-b9ba-2ff57227567d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/arm_dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/arm_showroom_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/arm_showroom_spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/body_dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/body_showroom_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/body_showroom_spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/glass_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/glass_dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/hand_dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/hand_showroom_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/hand_showroom_spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/helmet_diff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/helmet_showroom_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/helmet_showroom_spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/leg_dif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/leg_showroom_ddn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/leg_showroom_spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/nanosuit.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/nanosuit.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/models/nanosuit/nanosuit.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/shaders/basic.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/shaders/basic.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/textures/stone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +70,9 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="1S8ygIhnebPqIXBmkoXRSqVdGQ9" />
   <component name="PropertiesComponent">
@@ -144,11 +174,28 @@
       <workItem from="1571245065710" duration="1346000" />
       <workItem from="1571303357593" duration="13533000" />
       <workItem from="1571393250279" duration="2607000" />
+      <workItem from="1571500590886" duration="317000" />
+      <workItem from="1571567325396" duration="28000" />
+      <workItem from="1571759778460" duration="2673000" />
+      <workItem from="1571765609082" duration="238000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

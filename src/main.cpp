@@ -43,7 +43,14 @@ void generate_square(GLfloat x, GLfloat y, GLfloat a){
 void generate_carpet(GLfloat x, GLfloat y, GLfloat a, GLuint maxDepth, GLuint depth){
     if(depth < maxDepth){
         if(depth == 0) vertices.clear();
-        generate_square(x, y, a);
+        generate_square(x - a / 3, y - a / 3, a / 3);
+        generate_square(x - a / 3, y, a / 3);
+        generate_square(x - a / 3, y + a / 3, a / 3);
+        generate_square(x + a / 3, y, a / 3);
+        generate_square(x + a / 3, y + a / 3, a / 3);
+        generate_square(x + a / 3, y - a / 3, a / 3);
+        generate_square(x, y - a / 3, a / 3);
+        generate_square(x, y + a / 3, a / 3);
         generate_square(x, y, a / 3);
         generate_carpet(x - a / 3, y - a / 3, a / 3, maxDepth, depth + 1);
         generate_carpet(x - a / 3, y, a / 3, maxDepth, depth + 1);
@@ -72,12 +79,12 @@ void processInput(GLFWwindow *window)
 void draw_carpet(GLuint VAO, GLuint shaderProgram, float* outerColor, float* innerColor){
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f); //state-setting
     glClear(GL_COLOR_BUFFER_BIT); //state-using
-    for(unsigned long long i = 0; i< vertices.size(); i+=6){
+    for(unsigned long long i = 0; i < vertices.size(); i+=6){
         GLint vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
-        if(i%4 == 0){
-            glUniform4f(vertexColorLocation, outerColor[0], outerColor[1], outerColor[2], outerColor[3]);
-        }else{
+        if((i+6)%54 == 0){
             glUniform4f(vertexColorLocation, innerColor[0], innerColor[1], innerColor[2],innerColor[3]);
+        }else{
+            glUniform4f(vertexColorLocation, outerColor[0], outerColor[1], outerColor[2], outerColor[3]);
         }
         glDrawArrays(GL_TRIANGLES, i, 6);
     }
@@ -160,6 +167,7 @@ int main()
     float color1[] = {0.0f, 0.0f, 0.0f, 1.0f};
     float color2[] = {1.0f, 1.0f, 1.0f, 1.0f};
     glUseProgram(shaderProgram);
+    //glPolygonMode(GL_FRONT_AND_BACK,  GL_LINE);
     while(!glfwWindowShouldClose(window))
     {
         //input
